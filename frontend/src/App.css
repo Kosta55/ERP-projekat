@@ -1,0 +1,189 @@
+.required:after {
+  content: ' *';
+  color: red;
+}
+
+.bg-facebook {
+  background-color: #3b5998;
+}
+.bg-twitter {
+  background-color: #1da1f2;
+}
+.bg-google {
+  background-color: #ea4335;
+}
+.bg-instagram {
+  background-color: #e1306c;
+}
+.bs-cover {
+  background-size: cover;
+}
+.r-0 {
+  right: 0;
+}
+.mw-210 {
+  max-width: 210px;
+}
+.mw-140 {
+  max-width: 140px;
+}
+.i-va {
+  vertical-align: -0.125em;
+}
+.breadcrumb {
+  padding: 0.5rem 1rem;
+  background-color: #e9ecef;
+}
+.accordion-icon-button {
+  display: flex;
+  border-radius: inherit;
+}
+.accordion-icon-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2016%2016'%20fill%3D'%23%7B%24accordion-icon-color%7D'%3E%3Cpath%20fill-rule%3D'evenodd'%20d%3D'M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z'%2F%3E%3C%2Fsvg%3E");
+  transform: rotate(-180deg);
+  background-position-y: center;
+}
+.accordion-icon-button::after {
+  flex-shrink: 0;
+  background-position-y: center;
+  width: 20px;
+  margin-left: auto;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2016%2016'%20fill%3D'%23%7B%24accordion-icon-active-color%7D'%3E%3Cpath%20fill-rule%3D'evenodd'%20d%3D'M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z'%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion-icon-button.collapsed {
+  border-bottom: none;
+}
+
+.nav-pills li a:hover {
+  background-color: rgb(66, 66, 243);
+}
+
+.on {
+  color: #f8e825;
+}
+.off {
+  color: #ccc;
+}
+
+.stripe-form {
+  width: 30vw;
+  min-width: 500px;
+  align-self: center;
+  box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 40px;
+}
+
+#payment-message {
+  color: rgb(243, 28, 12);
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#payment-element {
+  margin-bottom: 24px;
+}
+
+/* Buttons and links */
+.stripe-button {
+  background: #5469d4;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+button:hover {
+  filter: contrast(115%);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: '';
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 80vw;
+    min-width: initial;
+  }
+}
